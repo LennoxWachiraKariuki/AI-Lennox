@@ -1,28 +1,50 @@
-body {
-  background: #0e0e1f;
-  color: #e0e0ff;
-  font-family: 'Segoe UI', sans-serif;
-  padding: 2rem;
-  text-align: center;
-}
-header h1 {
-  font-size: 2.5rem;
-  color: #66ccff;
-}
-.upload-section {
-  margin-top: 2rem;
-}
-input[type="file"] {
-  margin: 1rem 0;
-}
-button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #66ccff;
-  color: #000;
-  border-radius: 8px;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #33bbff;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Lennox Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-white font-sans">
+
+  <!-- Sidebar -->
+  <div class="flex min-h-screen">
+    <aside class="w-64 bg-gray-900 p-6 space-y-4">
+      <h2 class="text-2xl font-bold text-blue-400">AI Lennox</h2>
+      <nav class="space-y-2">
+        <a href="#" class="block px-4 py-2 rounded hover:bg-gray-800">Dashboard</a>
+        <a href="#" class="block px-4 py-2 rounded hover:bg-gray-800">Google Sheets</a>
+        <a href="#" class="block px-4 py-2 rounded hover:bg-gray-800">Image/Video Analysis</a>
+        <a href="#" class="block px-4 py-2 rounded hover:bg-gray-800">Planner & Notes</a>
+        <a href="#" class="block px-4 py-2 rounded hover:bg-gray-800">Settings</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8 space-y-6">
+      <!-- Top Bar -->
+      <header class="flex justify-between items-center border-b border-gray-700 pb-4">
+        <h1 class="text-3xl font-semibold">Dashboard</h1>
+        <div class="bg-blue-500 text-white rounded-full px-4 py-2">User</div>
+      </header>
+
+      <!-- Main Panel -->
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg">
+          <h2 class="text-xl font-semibold mb-2">AI Assistant</h2>
+          <p class="text-gray-400">Your private AI Lennox is ready. Start typing or give a command.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg">
+          <h2 class="text-xl font-semibold mb-2">Quick Access</h2>
+          <ul class="list-disc pl-4 text-gray-400">
+            <li>Analyze image/video</li>
+            <li>Update Google Sheet</li>
+            <li>Get motivational tips</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
